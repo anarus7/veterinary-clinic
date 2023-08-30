@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Demo 
+
+
+![3](https://github.com/anarus7/veterinary-clinic/assets/117738169/0b64f06a-7d1e-4078-b9b8-db565224ce1a)
+![2](https://github.com/anarus7/veterinary-clinic/assets/117738169/8d7a89d7-8b79-48cd-aed3-52f75aff7c33)
+![1](https://github.com/anarus7/veterinary-clinic/assets/117738169/9f71bb19-5c59-427b-bf7d-98edd9848a26)
+![5](https://github.com/anarus7/veterinary-clinic/assets/117738169/ca1877b2-7b41-4134-8676-5dfa8497fe75)
+![4](https://github.com/anarus7/veterinary-clinic/assets/117738169/79bc1fda-68b9-4b39-8f79-24e6c7bf27f3)
