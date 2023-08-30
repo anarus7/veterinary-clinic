@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let patient of patients">
+    <div class="card mb-3 box-shadow">
+      <div class="d-flex justify-content-between">
+        <img
+          class="card-img-top"
+          src="https://illustoon.com/photo/dl/7195.png"
+          alt="Card image cap"
+        />
+        <button
+          (click)="deletePatient(patient)"
+          mat-fab
+          color="warn"
+          aria-label="Example icon button with a delete icon"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ patient.name }}</h5>
+        <p class="card-text">Species : {{ patient.species }}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

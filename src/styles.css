@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/material.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .btn-group {
+    margin-right: 1rem;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .btn-outline-secondary {
+    border-color: #ccc;
+    color: #ccc;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+  .text-muted {
+    color: #999;
+  }
+  body{
+    background-image: url('assets/i7.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  html, body {
+    height: 100%;
+  }
+  app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }

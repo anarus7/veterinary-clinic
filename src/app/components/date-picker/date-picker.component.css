@@ -1,0 +1,104 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,600;1,500;1,700&display=swap');
+
+
+
+body {
+  background-color: #f2f2f2;
+}
+
+.card-header {
+  border-color: #ffffff;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: #3caea3;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #3caea3;
+  border-color: #3caea3;
+}
+
+.btn-primary:hover {
+  background-color: #2c8a81;
+  border-color: #2c8a81;
+}
+
+.btn-primary:focus {
+  background-color: #3caea3;
+  border-color: #3caea3;
+  box-shadow: none;
+}
+
+
+/* Styles for the calendar container */
+.card {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 20px auto;
+max-width: 800px;
+}
+
+/* Styles for the calendar header */
+.fc-toolbar {
+background-color: #17a2b8;
+border-color: #17a2b8;
+border-radius: 5px 5px 0 0;
+color: #fff;
+
+}
+
+
+
+/* Styles for the calendar buttons */
+.fc-button {
+background-color: #17a2b8;
+border-color: #17a2b8;
+color: #fff;
+}
+
+/* Styles for the calendar events */
+.fc-event {
+background-color: #dc3545;
+border-color: #dc3545;
+color: #fff;
+}
+
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-family: 'Roboto Serif', serif;
+}
+.container h2{
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+}
+.container h1 {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+}
+
+.container {
+  font-family: 'Roboto Serif', serif;
+}
+
+.alert.alert-success {
+  background-color: #4caf50;
+  color: #fff;
+}

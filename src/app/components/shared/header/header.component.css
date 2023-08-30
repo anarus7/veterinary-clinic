@@ -1,0 +1,15 @@
+span {
+    font-family: "Arial", sans-serif;
+    font-size: 28px;
+    color: #4c86bd; /* warm orange color */
+    font-weight: bold;
+  }
+  .fa-paw {
+    animation: spin 2s infinite linear;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  

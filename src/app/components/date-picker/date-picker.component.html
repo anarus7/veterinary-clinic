@@ -1,0 +1,181 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Serif:ital,wght@0,600;1,300;1,500;1,700&display=swap"
+  rel="stylesheet"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+/>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<style>
+  .container {
+    text-align: left;
+  }
+</style>
+
+<div class="container">
+  <h1>
+    <span>Calendar</span>
+  </h1>
+  <div class="card">
+    <div class="card-body">
+      <full-calendar #calendar [options]="calendarOptions"></full-calendar>
+    </div>
+  </div>
+
+  <form (submit)="createAppointment()">
+    <div class="form-group">
+      <label for="title">Pet Name</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        class="form-control"
+        [(ngModel)]="petName"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="title">Species</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        class="form-control"
+        [(ngModel)]="species"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        class="form-control"
+        [(ngModel)]="date"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="appointment-time" class="form-label">Time</label>
+      <select
+        class="form-select"
+        id="appointment-time"
+        name="appointment-time"
+        [(ngModel)]="time"
+        required
+      >
+        <option value="" disabled selected>Select a time slot</option>
+        <option value="08:00">08:20 AM</option>
+        <option value="08:40">08:40 AM</option>
+        <option value="09:00">09:00 AM</option>
+        <option value="09:20">09:20 AM</option>
+        <option value="09:40">09:40 AM</option>
+        <option value="10:20">10:20 AM</option>
+        <option value="10:40">10:40 AM</option>
+        <option value="11:20">11:20 AM</option>
+        <option value="11:40">11:40 AM</option>
+        <option value="12:20">12:20 PM</option>
+        <option value="12:40">12:40 PM</option>
+        <option value="13:20">13:20 PM</option>
+        <option value="13:40">13:40 PM</option>
+        <option value="14:20">14:20 PM</option>
+        <option value="14:40">14:40 PM</option>
+        <option value="15:20">15:20 PM</option>
+        <option value="15:40">15:40 PM</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="description">Reason </label>
+      <textarea
+        id="description"
+        name="description"
+        class="form-control"
+        [(ngModel)]="reason"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Appointment</button>
+  </form>
+
+  <hr />
+
+  <h2>Appointments</h2>
+  <!-- <table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Pet Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of appointments">
+        <td>{{ appointment.petName }}</td>
+        <td>{{ appointment.date }}</td>
+        <td>{{ appointment.time }}</td>
+        <td>{{ appointment.reason }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="petName">
+      <th mat-header-cell *matHeaderCellDef>Pet Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.pet?.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="species">
+      <th mat-header-cell *matHeaderCellDef>Species</th>
+      <td mat-cell *matCellDef="let element">{{ element.pet?.species }}</td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="reason">
+      <th mat-header-cell *matHeaderCellDef>Reason</th>
+      <td mat-cell *matCellDef="let element">{{ element.reason }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="time">
+      <th mat-header-cell *matHeaderCellDef>Time</th>
+      <td mat-cell *matCellDef="let element">{{ element.time }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef>Delete</th>
+
+      <td mat-cell *matCellDef="let element">
+        <button
+          mat-icon-button
+          matTooltip="Click to Delete"
+          class="iconbutton"
+          (click)="deleteAppointment(element.id)"
+          color="warn"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

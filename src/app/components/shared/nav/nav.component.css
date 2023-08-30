@@ -1,0 +1,73 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navar-brand {
+  color: #4f4f4f;
+}
+
+.navbar-scroll .nav-link:hover {
+  color: #1266f1;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navar-brand {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body {
+  background-color: #927979;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scrolled .nav-link {
+  color: #4f4f4f;
+  font-size: 18px; /* Add this line to increase the font size of the nav links */
+}
+
+.transparent-navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+}
+.nav-item a {
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #007bff;
+}
+.navbar {
+  transition: background-color 0.3s;
+}
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  border-radius: 5px;
+}

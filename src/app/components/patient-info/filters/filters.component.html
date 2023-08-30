@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    <strong>Search</strong>
+  </div>
+
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="from">Pet name</label>
+
+        <input
+          type="text"
+          id="from"
+          [(ngModel)]="searchText"
+          class="form-control"
+          name="searchText"
+          (input)="onSearchSubmit($event)"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,12 @@
+.patient-info-div {
+    padding-top: 100px;
+}
+.mt-5 {
+    margin-top: 100px;
+}
+body{
+    background-image: url('/image.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }

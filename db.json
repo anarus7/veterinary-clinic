@@ -1,0 +1,228 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "patients": [
+    {
+      "name": "Mushi",
+      "species": "Cat",
+      "breed": "DSH",
+      "gender": "M",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 2
+    },
+    {
+      "name": "Lili",
+      "species": "dog",
+      "breed": "Labrador",
+      "gender": "F",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 3
+    },
+    {
+      "name": "Ami",
+      "species": "dog",
+      "breed": "Boxer",
+      "gender": "F",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 5
+    },
+    {
+      "name": "Nero",
+      "species": "dog",
+      "breed": "DSH",
+      "gender": "M",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 7
+    },
+    {
+      "name": "Nala",
+      "species": "Dog",
+      "breed": "Labrador",
+      "gender": "male",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 8
+    },
+    {
+      "name": "Jessy",
+      "species": "cat",
+      "breed": "ragdol",
+      "gender": "female",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 9
+    },
+    {
+      "name": "Harry",
+      "species": "Dog",
+      "id": 11
+    },
+    {
+      "name": "Musi",
+      "species": "cat",
+      "breed": "dsh",
+      "gender": "male",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 12
+    },
+    {
+      "name": "Max",
+      "species": "dog",
+      "id": 13
+    },
+    {
+      "name": "Aflie",
+      "species": "Cat",
+      "breed": "dsh",
+      "gender": "male",
+      "imageUrl": "",
+      "isVaccinated": "",
+      "id": 14
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "appointments": [
+    {
+      "ownerName": "",
+      "reason": "TEST",
+      "pet": {
+        "name": "MAX",
+        "species": "DOG"
+      },
+      "date": "2023-05-02",
+      "time": "13:40",
+      "id": 1
+    },
+    {
+      "ownerName": "",
+      "reason": "vaccination",
+      "pet": {
+        "name": "Ami",
+        "species": "Dog"
+      },
+      "date": "2023-05-16",
+      "time": "10:40",
+      "id": 2
+    },
+    {
+      "ownerName": "",
+      "reason": "ovh",
+      "pet": {
+        "name": "Whiskers",
+        "species": "cat"
+      },
+      "date": "2023-05-01",
+      "time": "11:40",
+      "id": 3
+    },
+    {
+      "ownerName": "",
+      "reason": "Vaccination",
+      "pet": {
+        "name": "Harry",
+        "species": "Dog"
+      },
+      "date": "2023-05-31",
+      "time": "15:40",
+      "id": 4
+    },
+    {
+      "ownerName": "",
+      "reason": "vacc",
+      "pet": {
+        "name": "Max",
+        "species": "dog"
+      },
+      "date": "2023-05-11",
+      "time": "10:40",
+      "id": 5
+    }
+  ],
+  "owners": [
+    {
+      "name": "Ana",
+      "address": "Cluj",
+      "pets": [
+        {
+          "name": "Alfie",
+          "species": "Cat",
+          "breed": "DSH",
+          "gender": "M",
+          "imageUrl": "",
+          "isVaccinated": "",
+          "id": 1
+        },
+        {
+          "name": "Mushi",
+          "species": "Cat",
+          "breed": "DSH",
+          "gender": "M",
+          "imageUrl": "",
+          "isVaccinated": "",
+          "id": 2
+        },
+        {
+          "name": "Lili",
+          "species": "dog",
+          "breed": "Labrador",
+          "gender": "F",
+          "imageUrl": "",
+          "isVaccinated": "",
+          "id": 3
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Cristina",
+      "address": "Sweden",
+      "pets": [
+        {
+          "name": "Lili",
+          "species": "dog",
+          "breed": "Labrador",
+          "gender": "F",
+          "imageUrl": "",
+          "isVaccinated": "",
+          "id": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Mihaela",
+      "address": "cluj",
+      "pets": [
+        {
+          "name": "Nasuc",
+          "species": "cat",
+          "breed": "DSH",
+          "gender": "female",
+          "imageUrl": "",
+          "isVaccinated": "",
+          "id": 10
+        }
+      ],
+      "id": 4
+    }
+  ]
+}

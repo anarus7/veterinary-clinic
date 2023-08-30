@@ -1,0 +1,51 @@
+<button mat-fab extended (click)="openAddEditOwner()">
+  <mat-icon>home</mat-icon>
+  Add Owner
+</button>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Owner Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <!-- Address Column -->
+  <ng-container matColumnDef="address">
+    <th mat-header-cell *matHeaderCellDef>Address</th>
+    <td mat-cell *matCellDef="let element">{{ element.address }}</td>
+  </ng-container>
+
+  <!-- Pets Column -->
+  <ng-container matColumnDef="pets">
+    <th mat-header-cell *matHeaderCellDef>Pets</th>
+    <td mat-cell *matCellDef="let element">
+      <ul *ngFor="let pet of element.pets">
+        <li>
+          <span>{{ pet.name }}</span>
+        </li>
+      </ul>
+    </td>
+  </ng-container>
+
+  <!-- Delete -->
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef>Delete</th>
+
+    <td mat-cell *matCellDef="let element">
+      <button
+        mat-icon-button
+        matTooltip="Click to Delete"
+        class="iconbutton"
+        (click)="deleteOwner(element.id)"
+        color="warn"
+      >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

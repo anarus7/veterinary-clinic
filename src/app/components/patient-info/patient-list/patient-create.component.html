@@ -1,0 +1,33 @@
+<div class="patient-container">
+  <div class="input-container">
+    <fa-icon [icon]="faDog"></fa-icon>
+
+    <input
+      type="text"
+      [(ngModel)]="newPatientName"
+      placeholder="Patient name"
+    />
+    <input
+      type="text"
+      [(ngModel)]="newPatientSpecies"
+      placeholder="Patient species"
+    />
+    <input
+      type="text"
+      [(ngModel)]="newPatientBreed"
+      placeholder="Patient breed"
+    />
+
+    <div class="form-group">
+      <label for="gender">Patient gender:</label>
+      <select class="form-control" id="gender" [(ngModel)]="newPatientGender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+
+    <button (click)="addPatient()">Add Patient</button>
+  </div>
+</div>
+
+<!-- here we create a patient -->
