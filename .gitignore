@@ -42,3 +42,5 @@ testem.log
 Thumbs.db
 sendgrid.env
 sendgrid.env
+
+node_modules
